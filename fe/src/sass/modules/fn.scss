@@ -1,0 +1,275 @@
+// @Author: yanhaowei
+// @Date:   2017-05-28T13:13:51+08:00
+// @Last modified by:   yanhaowei
+// @Last modified time: 2017-05-28T14:28:46+08:00
+
+
+
+//colors
+$grey-3:#333;
+$grey-6:#666;
+$grey-9:#999;
+$black:#000;
+$ff:#fff;
+$color_border:#ccc;
+//fn
+@mixin tran($a:all, $b:ease, $c:.3s,$d:0s) {
+    transition: $a $b $c $d;
+    -moz-transition: $a $b $c $d;
+    -webkit-transition:$a $b $c $d;
+}
+@mixin animation($a){
+	animation:$a;
+    -moz-animation:$a;
+    -webkit-animation:$a;
+
+}
+@mixin transform($a) {
+    transform: $a;
+    -moz-transform: $a;
+    -webkit-transform: $a;
+    -ms-transform: $a;
+}
+@mixin line_over($num:2) {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $num;
+}
+@mixin h_middle($a){
+    height:$a;
+    line-height: $a;
+}
+@mixin circle($a){
+    width:$a;
+    height:$a;
+    border-radius: 50%;
+}
+@mixin fang($a){
+    width:$a;
+    height:$a;
+}
+@mixin circle_m($a){
+    width:$a;
+    height:$a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: $a;
+}
+//class
+.grey-3{
+    color:$grey-3;
+}
+.grey-6{
+    color:$grey-6;
+}
+.grey-9{
+    color:$grey-9;
+}
+.ff{
+    color:$ff;
+}
+
+//白色背景
+
+.bg_f {
+    background-color: #fff !important;
+}
+//边框
+
+.border_b {
+    border-bottom: 1px solid $color_border;
+}
+
+.border_t {
+    border-top: 1px solid $color_border;
+}
+
+.border_l {
+    border-left: 1px solid $color_border;
+}
+
+.border_r {
+    border-right: 1px solid $color_border;
+}
+//文字超出省略
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+.ellipsis2 {
+    display: block;
+    @include line_over(2);
+}
+//禁止选中
+
+.no_select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+//溢出控制
+
+.over_y {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.over_x {
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+//清浮动
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+//定位
+
+.pr {
+    position: relative !important;
+}
+
+.pa {
+    position: absolute !important;
+}
+.pf{
+    position: fixed;
+}
+//浮动
+
+.fl {
+    float: left !important;
+}
+
+.fr {
+    float: right !important;
+}
+//字号
+
+.f12 {
+    font-size: 12px !important;
+}
+
+.f13 {
+    font-size: 13px !important;
+}
+
+.f14 {
+    font-size: 14px !important;
+}
+
+.f15 {
+    font-size: 15px !important;
+}
+
+.f16 {
+    font-size: 16px !important;
+}
+
+.f17 {
+    font-size: 17px !important;
+}
+
+.f18 {
+    font-size: 18px !important;
+}
+
+.f19 {
+    font-size: 19px !important;
+}
+
+.f20 {
+    font-size: 20px !important;
+}
+//对齐
+
+.tl {
+    text-align: left !important;
+}
+
+.tr {
+    text-align: right !important;
+}
+
+.tc {
+    text-align: center !important;
+}
+//间距
+
+.mt5 {
+    margin-top: 5px !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mt15 {
+    margin-top: 15px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.mt25 {
+    margin-top: 25px !important;
+}
+
+.mt30 {
+    margin-top: 30px !important;
+}
+
+.mt35 {
+    margin-top: 35px !important;
+}
+
+.mt40 {
+    margin-top: 40px !important;
+}
+
+.mb5 {
+    margin-bottom: 5px !important;
+}
+
+.mb10 {
+    margin-bottom: 10px !important;
+}
+
+.mb15 {
+    margin-bottom: 15px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+.mb25 {
+    margin-bottom: 25px !important;
+}
+
+.mb30 {
+    margin-bottom: 30px !important;
+}
+
+.mb35 {
+    margin-bottom: 35px !important;
+}
+
+.mb40 {
+    margin-bottom: 40px !important;
+}
