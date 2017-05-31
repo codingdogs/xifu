@@ -2,7 +2,7 @@
  * @Author: yanhaowei
  * @Date:   2017-05-28T12:14:50+08:00
  * @Last modified by:   yanhaowei
- * @Last modified time: 2017-05-28T18:36:05+08:00
+ * @Last modified time: 2017-05-29T08:47:11+08:00
  */
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
@@ -101,3 +101,6 @@ gulp.task('browser-sync', function () {
         files: ['./dist/**/*']
     });
 });
+gulp.task('default',function(){
+    console.log('gulp build=====>重新生成dist文件\ngulp watch=====>监听文件实时更新')
+})
