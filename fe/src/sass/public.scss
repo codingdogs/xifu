@@ -1,14 +1,7 @@
 // @Author: yanhaowei
 // @Date:   2017-05-28T12:53:03+08:00
 // @Last modified by:   yanhaowei
-// @Last modified time: 2017-05-28T14:27:37+08:00
+// @Last modified time: 2017-06-03T12:47:37+08:00
 @import "./modules/fn";
-$color:red;
-body{
-    background: $grey-3;
-    color: red;
-
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 5em;
-}
+@import "./modules/reset";
+@import "./modules/block/nav";

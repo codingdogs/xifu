@@ -1,0 +1,22 @@
+{
+  "name": "xiaomi",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "严浩韦 <704175885@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/codingdogs/xifu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2",
+    "angular-bootstrap": "^2.5.0",
+    "unslider": "^2.0.3"
+  }
+}
